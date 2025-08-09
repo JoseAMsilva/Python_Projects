@@ -90,6 +90,7 @@ while rodando:
     if colidiu_cano or fora_da_tela:
         rodando = False
 
+
     #Contagem de pontos
     if cano_x + LARGURA_CANO < PASSARO_X and not ja_pontuou:
         pontuacao += 1
