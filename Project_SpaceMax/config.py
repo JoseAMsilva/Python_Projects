@@ -1,13 +1,13 @@
 import os
 
-# === CONFIGURAÇÕES GERAIS ===
+#CONFIGURAÇÕES GERAIS
 LARGURA = 800
 ALTURA = 600
 FPS = 60
 
-# === CORES (RGB) ===
+#CORES (RGB)
 PRETO = (0, 0, 0)
 BRANCO = (255, 255, 255)
 
-# === PASTAS ===
+#PASTAS
 PASTA_IMAGENS = os.path.join(os.path.dirname(__file__), "imagens")
