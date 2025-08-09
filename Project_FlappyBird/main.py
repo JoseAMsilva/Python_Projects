@@ -86,7 +86,7 @@ while rodando:
     #Testa se o passaro saiu da tela
     fora_da_tela = passaro_y > ALTURA or passaro_y < 0
 
-    #Se ele colidiu ou saiu da tela o jogo finaliza
+    #Se colidiu ou saiu da tela o jogo finaliza
     if colidiu_cano or fora_da_tela:
         rodando = False
 
