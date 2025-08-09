@@ -2,7 +2,7 @@ import pygame
 from config import *
 from sprites import Jogador, Inimigo
 
-# === FUNÇÕES AUXILIARES ===
+#FUNÇÕES AUXILIARES
 def desenhar_texto(surface, texto, tamanho, x, y, cor=BRANCO):
     fonte = pygame.font.Font(None, tamanho)
     texto_surface = fonte.render(texto, True, cor)
@@ -10,7 +10,7 @@ def desenhar_texto(surface, texto, tamanho, x, y, cor=BRANCO):
     texto_rect.midtop = (x, y)
     surface.blit(texto_surface, texto_rect)
 
-# === INICIALIZAÇÃO ===
+#INICIALIZAÇÃO
 pygame.init()
 pygame.mixer.init()
 tela = pygame.display.set_mode((LARGURA, ALTURA))
@@ -21,7 +21,7 @@ clock = pygame.time.Clock()
 fundo = pygame.image.load(os.path.join(PASTA_IMAGENS, "fundo.png")).convert()
 fundo = pygame.transform.scale(fundo, (LARGURA, ALTURA))
 
-# === LOOP PRINCIPAL ===
+#LOOP PRINCIPAL
 jogando = True
 while jogando:
     # Criar sprites
